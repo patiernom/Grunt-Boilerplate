@@ -6,7 +6,7 @@ module.exports = function(config) {
 
         // frameworks to use
         // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-        frameworks: ['qunit', 'sinon'],
+        frameworks: ['mocha','chai', 'sinon'],
 
 
         // list of files / patterns to load in the browser
@@ -25,28 +25,13 @@ module.exports = function(config) {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'src/*.js' : 'coverage'
         },
 
 
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['progress', 'html', 'coverage', 'junit'],
-
-        junitReporter: {
-            outputFile: 'tests/testReport/test-results.xml',
-            suite: ''
-        },
-
-        coverageReporter : {
-            type : 'html',
-            dir : 'tests/testReport/coverage/'
-        },
-
-        htmlReporter: {
-            outputFile: 'tests/testReport/result.html'
-        },
+        reporters: ['progress'],
 
 
         // web server port
@@ -63,7 +48,7 @@ module.exports = function(config) {
 
 
         // enable / disable watching file and executing tests whenever any file changes
-        autoWatch: false,
+        autoWatch: true,
 
 
         // Start these browsers, currently available:
@@ -78,32 +63,15 @@ module.exports = function(config) {
         // SET JAVA_HOME:C:\Program Files\Java\jre7\bin
         browsers: ['PhantomJS'],
 
-        customLaunchers: {
-            IETesterCustomAll: { // this is not tracked by the reporter, track only one(random)
-                base: 'IETester',
-                flags: ['-ie7', '-ie8', '-ie']
-            },
-            IETester7: {
-                base: 'IETester',
-                flags: ['-ie7']
-            },
-            IETester8: {
-                base: 'IETester',
-                flags: ['-ie8']
-            }
-        },
+        // Use this to add custom launchers for example IETester
+        customLaunchers: {},
 
         // list of plugins
         plugins: [
-            'karma-qunit',
+            'karma-mocha',
+            'karma-chai',
             'karma-sinon',
-            'karma-script-launcher',
-            'karma-phantomjs-launcher',
-            'karma-chrome-launcher',
-            'karma-ietester-starter',
-            'karma-coverage',
-            'karma-junit-reporter',
-            'karma-htmlfile-reporter'
+            'karma-phantomjs-launcher'
         ],
 
 
