@@ -1,6 +1,6 @@
 module.exports = {
     unit: {
-        configFile: "./config/karma.qunit.js",
-        autoWatch: true
+        configFile: "./config/karma.mocha.js",
+        autoWatch: false
     }
 };

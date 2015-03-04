@@ -1,0 +1,185 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'karma-qunit',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json LittleGruntBoilerplate@0.0.1 No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'karma-qunit', null ]
+8 verbose cache add name=undefined spec="karma-qunit" args=["karma-qunit",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'karma-qunit',
+9 verbose parsed url   path: 'karma-qunit',
+9 verbose parsed url   href: 'karma-qunit' }
+10 silly lockFile 3021af71-karma-qunit karma-qunit
+11 verbose lock karma-qunit C:\Users\Marco\AppData\Roaming\npm-cache\3021af71-karma-qunit.lock
+12 silly lockFile 3021af71-karma-qunit karma-qunit
+13 silly lockFile 3021af71-karma-qunit karma-qunit
+14 verbose addNamed [ 'karma-qunit', '' ]
+15 verbose addNamed [ null, '*' ]
+16 silly lockFile 97086a89-karma-qunit karma-qunit@
+17 verbose lock karma-qunit@ C:\Users\Marco\AppData\Roaming\npm-cache\97086a89-karma-qunit.lock
+18 silly addNameRange { name: 'karma-qunit', range: '*', hasData: false }
+19 verbose url raw karma-qunit
+20 verbose url resolving [ 'https://registry.npmjs.org/', './karma-qunit' ]
+21 verbose url resolved https://registry.npmjs.org/karma-qunit
+22 info trying registry request attempt 1 at 23:54:32
+23 verbose etag "47IE43ND6ICZPEG247PGZAHCZ"
+24 http GET https://registry.npmjs.org/karma-qunit
+25 http 304 https://registry.npmjs.org/karma-qunit
+26 silly registry.get cb [ 304,
+26 silly registry.get   { date: 'Wed, 04 Mar 2015 22:54:34 GMT',
+26 silly registry.get     server: 'Apache',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     'last-modified': 'Wed, 04 Mar 2015 22:54:34 GMT',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     etag: '"47IE43ND6ICZPEG247PGZAHCZ"',
+26 silly registry.get     age: '0',
+26 silly registry.get     'x-served-by': 'cache-fra1231-FRA',
+26 silly registry.get     'x-cache': 'HIT',
+26 silly registry.get     'x-cache-hits': '1',
+26 silly registry.get     'x-timer': 'S1425509674.836631,VS0,VE101',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'content-length': '0',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 verbose etag karma-qunit from cache
+28 silly addNameRange number 2 { name: 'karma-qunit', range: '*', hasData: true }
+29 silly addNameRange versions [ 'karma-qunit',
+29 silly addNameRange   [ '0.0.1',
+29 silly addNameRange     '0.0.2',
+29 silly addNameRange     '0.0.3',
+29 silly addNameRange     '0.1.0',
+29 silly addNameRange     '0.1.1',
+29 silly addNameRange     '0.1.2',
+29 silly addNameRange     '0.1.3',
+29 silly addNameRange     '0.1.4' ] ]
+30 verbose addNamed [ 'karma-qunit', '0.1.4' ]
+31 verbose addNamed [ '0.1.4', '0.1.4' ]
+32 silly lockFile c263f70c-karma-qunit-0-1-4 karma-qunit@0.1.4
+33 verbose lock karma-qunit@0.1.4 C:\Users\Marco\AppData\Roaming\npm-cache\c263f70c-karma-qunit-0-1-4.lock
+34 silly lockFile b4f84268-arma-qunit-karma-qunit-0-1-4-tgz https://registry.npmjs.org/karma-qunit/-/karma-qunit-0.1.4.tgz
+35 verbose lock https://registry.npmjs.org/karma-qunit/-/karma-qunit-0.1.4.tgz C:\Users\Marco\AppData\Roaming\npm-cache\b4f84268-arma-qunit-karma-qunit-0-1-4-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/karma-qunit/-/karma-qunit-0.1.4.tgz',
+36 verbose addRemoteTarball   '76e72d3c9c902d236cc8df107b30e79def630083' ]
+37 info retry fetch attempt 1 at 23:54:32
+38 verbose fetch to= C:\Users\Marco\AppData\Local\Temp\npm-1416-vcOTlf9G\1425509672912-0.12951253447681665\tmp.tgz
+39 http GET https://registry.npmjs.org/karma-qunit/-/karma-qunit-0.1.4.tgz
+40 http 200 https://registry.npmjs.org/karma-qunit/-/karma-qunit-0.1.4.tgz
+41 verbose tar unpack C:\Users\Marco\AppData\Local\Temp\npm-1416-vcOTlf9G\1425509672912-0.12951253447681665\tmp.tgz
+42 silly lockFile e579cd10--cache-karma-qunit-0-1-4-package tar://C:\Users\Marco\AppData\Roaming\npm-cache\karma-qunit\0.1.4\package
+43 verbose lock tar://C:\Users\Marco\AppData\Roaming\npm-cache\karma-qunit\0.1.4\package C:\Users\Marco\AppData\Roaming\npm-cache\e579cd10--cache-karma-qunit-0-1-4-package.lock
+44 silly lockFile 18f55537-2912-0-12951253447681665-tmp-tgz tar://C:\Users\Marco\AppData\Local\Temp\npm-1416-vcOTlf9G\1425509672912-0.12951253447681665\tmp.tgz
+45 verbose lock tar://C:\Users\Marco\AppData\Local\Temp\npm-1416-vcOTlf9G\1425509672912-0.12951253447681665\tmp.tgz C:\Users\Marco\AppData\Roaming\npm-cache\18f55537-2912-0-12951253447681665-tmp-tgz.lock
+46 silly gunzTarPerm modes [ '755', '644' ]
+47 silly gunzTarPerm extractEntry package.json
+48 silly gunzTarPerm extractEntry LICENSE
+49 silly gunzTarPerm extractEntry lib/adapter.js
+50 silly gunzTarPerm extractEntry lib/index.js
+51 silly lockFile e579cd10--cache-karma-qunit-0-1-4-package tar://C:\Users\Marco\AppData\Roaming\npm-cache\karma-qunit\0.1.4\package
+52 silly lockFile e579cd10--cache-karma-qunit-0-1-4-package tar://C:\Users\Marco\AppData\Roaming\npm-cache\karma-qunit\0.1.4\package
+53 silly lockFile 18f55537-2912-0-12951253447681665-tmp-tgz tar://C:\Users\Marco\AppData\Local\Temp\npm-1416-vcOTlf9G\1425509672912-0.12951253447681665\tmp.tgz
+54 silly lockFile 18f55537-2912-0-12951253447681665-tmp-tgz tar://C:\Users\Marco\AppData\Local\Temp\npm-1416-vcOTlf9G\1425509672912-0.12951253447681665\tmp.tgz
+55 silly lockFile b4f84268-arma-qunit-karma-qunit-0-1-4-tgz https://registry.npmjs.org/karma-qunit/-/karma-qunit-0.1.4.tgz
+56 silly lockFile b4f84268-arma-qunit-karma-qunit-0-1-4-tgz https://registry.npmjs.org/karma-qunit/-/karma-qunit-0.1.4.tgz
+57 silly lockFile c263f70c-karma-qunit-0-1-4 karma-qunit@0.1.4
+58 silly lockFile c263f70c-karma-qunit-0-1-4 karma-qunit@0.1.4
+59 silly lockFile 97086a89-karma-qunit karma-qunit@
+60 silly lockFile 97086a89-karma-qunit karma-qunit@
+61 silly resolved [ { name: 'karma-qunit',
+61 silly resolved     version: '0.1.4',
+61 silly resolved     description: 'A Karma plugin. Adapter for QUnit testing framework.',
+61 silly resolved     main: 'lib/index.js',
+61 silly resolved     scripts: { test: 'grunt test' },
+61 silly resolved     repository:
+61 silly resolved      { type: 'git',
+61 silly resolved        url: 'git://github.com/karma-runner/karma-qunit.git' },
+61 silly resolved     keywords: [ 'karma-plugin', 'karma-adapter', 'qunit' ],
+61 silly resolved     author: { name: 'Vojta Jina', email: 'vojta.jina@gmail.com' },
+61 silly resolved     dependencies: {},
+61 silly resolved     devDependencies:
+61 silly resolved      { grunt: '~0.4.1',
+61 silly resolved        'grunt-contrib-jshint': '~0.6',
+61 silly resolved        'grunt-karma': '~0.4',
+61 silly resolved        'grunt-bump': '~0.0.7',
+61 silly resolved        'grunt-npm': '~0.0.2',
+61 silly resolved        'grunt-auto-release': '~0.0.2' },
+61 silly resolved     peerDependencies: { karma: '>=0.9', qunitjs: '^1.14.0' },
+61 silly resolved     license: 'MIT',
+61 silly resolved     contributors:
+61 silly resolved      [ [Object],
+61 silly resolved        [Object],
+61 silly resolved        [Object],
+61 silly resolved        [Object],
+61 silly resolved        [Object],
+61 silly resolved        [Object],
+61 silly resolved        [Object],
+61 silly resolved        [Object] ],
+61 silly resolved     bugs: { url: 'https://github.com/karma-runner/karma-qunit/issues' },
+61 silly resolved     readme: 'ERROR: No README data found!',
+61 silly resolved     homepage: 'https://github.com/karma-runner/karma-qunit',
+61 silly resolved     _id: 'karma-qunit@0.1.4',
+61 silly resolved     _shasum: '76e72d3c9c902d236cc8df107b30e79def630083',
+61 silly resolved     _from: 'karma-qunit@',
+61 silly resolved     _resolved: 'https://registry.npmjs.org/karma-qunit/-/karma-qunit-0.1.4.tgz' } ]
+62 info install karma-qunit@0.1.4 into D:\webwork\Grunt-Boilerplate
+63 info installOne karma-qunit@0.1.4
+64 info D:\webwork\Grunt-Boilerplate\node_modules\karma-qunit unbuild
+65 info preuninstall karma-qunit@0.1.1
+66 info uninstall karma-qunit@0.1.1
+67 verbose true,D:\webwork\Grunt-Boilerplate\node_modules,D:\webwork\Grunt-Boilerplate\node_modules unbuild karma-qunit@0.1.1
+68 info postuninstall karma-qunit@0.1.1
+69 verbose tar unpack C:\Users\Marco\AppData\Roaming\npm-cache\karma-qunit\0.1.4\package.tgz
+70 silly lockFile 859ba518-erplate-node-modules-karma-qunit tar://D:\webwork\Grunt-Boilerplate\node_modules\karma-qunit
+71 verbose lock tar://D:\webwork\Grunt-Boilerplate\node_modules\karma-qunit C:\Users\Marco\AppData\Roaming\npm-cache\859ba518-erplate-node-modules-karma-qunit.lock
+72 silly lockFile 9ac00886-he-karma-qunit-0-1-4-package-tgz tar://C:\Users\Marco\AppData\Roaming\npm-cache\karma-qunit\0.1.4\package.tgz
+73 verbose lock tar://C:\Users\Marco\AppData\Roaming\npm-cache\karma-qunit\0.1.4\package.tgz C:\Users\Marco\AppData\Roaming\npm-cache\9ac00886-he-karma-qunit-0-1-4-package-tgz.lock
+74 silly gunzTarPerm modes [ '755', '644' ]
+75 silly gunzTarPerm extractEntry package.json
+76 silly gunzTarPerm extractEntry LICENSE
+77 silly gunzTarPerm extractEntry lib/adapter.js
+78 silly gunzTarPerm extractEntry lib/index.js
+79 silly lockFile 859ba518-erplate-node-modules-karma-qunit tar://D:\webwork\Grunt-Boilerplate\node_modules\karma-qunit
+80 silly lockFile 859ba518-erplate-node-modules-karma-qunit tar://D:\webwork\Grunt-Boilerplate\node_modules\karma-qunit
+81 silly lockFile 9ac00886-he-karma-qunit-0-1-4-package-tgz tar://C:\Users\Marco\AppData\Roaming\npm-cache\karma-qunit\0.1.4\package.tgz
+82 silly lockFile 9ac00886-he-karma-qunit-0-1-4-package-tgz tar://C:\Users\Marco\AppData\Roaming\npm-cache\karma-qunit\0.1.4\package.tgz
+83 info preinstall karma-qunit@0.1.4
+84 verbose readDependencies using package.json deps
+85 verbose readDependencies using package.json deps
+86 silly resolved []
+87 verbose about to build D:\webwork\Grunt-Boilerplate\node_modules\karma-qunit
+88 info build D:\webwork\Grunt-Boilerplate\node_modules\karma-qunit
+89 verbose linkStuff [ false,
+89 verbose linkStuff   false,
+89 verbose linkStuff   false,
+89 verbose linkStuff   'D:\\webwork\\Grunt-Boilerplate\\node_modules' ]
+90 info linkStuff karma-qunit@0.1.4
+91 verbose linkBins karma-qunit@0.1.4
+92 verbose linkMans karma-qunit@0.1.4
+93 verbose rebuildBundles karma-qunit@0.1.4
+94 info install karma-qunit@0.1.4
+95 info postinstall karma-qunit@0.1.4
+96 verbose readDependencies using package.json deps
+97 verbose already installed skipping qunitjs@^1.14.0 D:\webwork\Grunt-Boilerplate
+98 silly resolved []
+99 error peerinvalid The package qunitjs does not satisfy its siblings' peerDependencies requirements!
+99 error peerinvalid Peer karma-qunit@0.1.4 wants qunitjs@^1.14.0
+100 error System Windows_NT 6.1.7601
+101 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "karma-qunit" "--save-dev"
+102 error cwd D:\webwork\Grunt-Boilerplate
+103 error node -v v0.10.28
+104 error npm -v 1.4.9
+105 error code EPEERINVALID
+106 verbose exit [ 1, true ]

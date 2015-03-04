@@ -1,9 +1,11 @@
 /**
- * Created by Marco on 10/05/2014.
+ * Created by Marco on 04/03/2015.
  */
-var My = {
-    sqrt: function(x) {
-        if (x < 0) throw new Error("sqrt can't work on negative number");
-        return Math.exp(Math.log(x)/2);
-    }
+var Money = function(value){
+    return {
+        amount:value,
+        multiply:function(multiplier){
+            this.amount = this.amount * multiplier;
+        }
+    };
 };

@@ -6,7 +6,7 @@ module.exports = function(config) {
 
         // frameworks to use
         // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-        frameworks: ['mocha','chai', 'sinon'],
+        frameworks: ['mocha','chai'],
 
 
         // list of files / patterns to load in the browser
@@ -24,15 +24,21 @@ module.exports = function(config) {
 
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-        preprocessors: {
+        reporters: ['progress', 'html', 'coverage', 'junit'],
+
+        junitReporter: {
+            outputFile: 'tests/testReport/test-results.xml',
+            suite: ''
         },
 
+        coverageReporter : {
+            type : 'html',
+            dir : 'tests/testReport/coverage/'
+        },
 
-        // test results reporter to use
-        // possible values: 'dots', 'progress'
-        // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['progress'],
-
+        htmlReporter: {
+            outputFile: 'tests/testReport/result.html'
+        },
 
         // web server port
         port: 9876,
@@ -48,7 +54,7 @@ module.exports = function(config) {
 
 
         // enable / disable watching file and executing tests whenever any file changes
-        autoWatch: true,
+        autoWatch: false,
 
 
         // Start these browsers, currently available:
@@ -61,7 +67,7 @@ module.exports = function(config) {
         // - PhantomJS
         // - IE (only Windows) ,'C:\\Program\ Files\ \(x86\)\\Core\ Services\\IETester\\IETester.exe'
         // SET JAVA_HOME:C:\Program Files\Java\jre7\bin
-        browsers: ['PhantomJS'],
+        browsers: ['PhantomJS','Chrome'],
 
         // Use this to add custom launchers for example IETester
         customLaunchers: {},
@@ -70,13 +76,16 @@ module.exports = function(config) {
         plugins: [
             'karma-mocha',
             'karma-chai',
-            'karma-sinon',
-            'karma-phantomjs-launcher'
+            'karma-phantomjs-launcher',
+            'karma-chrome-launcher',
+            'karma-coverage',
+            'karma-junit-reporter',
+            'karma-htmlfile-reporter'
         ],
 
 
         // Continuous Integration mode
         // if true, Karma captures browsers, runs the tests and exits
-        singleRun: false
+        singleRun: true
     });
 };

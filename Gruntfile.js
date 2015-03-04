@@ -21,8 +21,8 @@ module.exports = function(grunt) {
 
     // Initial config
     var config = {
-        pkg: grunt.file.readJSON('package.json'),
-        env: process.env
+//        pkg: grunt.file.readJSON('package.json'),
+//        env: process.env
     };
 
     // Load tasks from the tasks folder
