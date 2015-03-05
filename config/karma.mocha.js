@@ -27,17 +27,17 @@ module.exports = function(config) {
         reporters: ['progress', 'html', 'coverage', 'junit'],
 
         junitReporter: {
-            outputFile: 'tests/testReport/test-results.xml',
+            outputFile: '../demo/tests/testReport/test-results.xml',
             suite: ''
         },
 
         coverageReporter : {
             type : 'html',
-            dir : 'tests/testReport/coverage/'
+            dir : '../demo/tests/testReport/coverage/'
         },
 
         htmlReporter: {
-            outputFile: 'tests/testReport/result.html'
+            outputFile: '../demo/tests/testReport/result.html'
         },
 
         // web server port
