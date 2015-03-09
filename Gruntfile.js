@@ -21,19 +21,18 @@ module.exports = function(grunt) {
 
     // Initial config
     var config = {
-//        pkg: grunt.file.readJSON('package.json'),
-//        env: process.env
+        pkg: grunt.file.readJSON('package.json')
     };
+
+    // Project configuration.
+    grunt.initConfig(config);
 
     // Load tasks from the tasks folder
     grunt.loadTasks('./config/tasks');
 
     // Load all the tasks options in tasks/options base on the name:
     // watch.js => watch{}
-    grunt.util._.extend(config, loadConfig('./config/tasks/options/'));
-
-    // Project configuration.
-    grunt.initConfig(config);
+    grunt.config.merge(loadConfig('./config/tasks/options/'));
 
     // These plugins provide necessary tasks.
     require('load-grunt-tasks')(grunt);
